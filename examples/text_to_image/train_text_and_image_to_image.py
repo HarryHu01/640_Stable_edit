@@ -406,7 +406,7 @@ def main():
         if args.train_data_dir is not None:
             data_files["train"] = os.path.join(args.train_data_dir, "**")
         dataset = load_dataset(
-            "imagefolder",
+            "imagefolder",   ###############Krishna  i think this has to point to our image folder
             data_files=data_files,
             cache_dir=args.cache_dir,
         )
@@ -594,7 +594,7 @@ def main():
                 ##noise = torch.randn_like(latents)
 
                 noise = vae.encode(batch["input_pixel_values"].to(weight_dtype)).latent_dist.sample()
-                noise = latents * 0.18215
+                noise = noise * 0.18215
 
                 ###### This is it.  I'm not sure if we need the latents * 0.18215 bit, but it is there just in case.
 
