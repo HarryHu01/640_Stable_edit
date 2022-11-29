@@ -34,3 +34,4 @@ pipe.to("cuda")
 image = pipe(prompt="yoda").images[0]  ##This needs to be edited to take prompt and image
 image.save("yoda-pokemon.png")
 ```
+https://github.com/huggingface/diffusers/tree/main/src/diffusers/pipelines#examples has the image to image example.

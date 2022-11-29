@@ -244,7 +244,7 @@ def get_full_repo_name(model_id: str, organization: Optional[str] = None, token:
 
 dataset_name_mapping = {
     "stable_edit/reddit_data": ("output_image","input_image", "text"),
-    ##"stable_edit/synth_data": ("output_image","input_image", "text"), 
+    ##"stable_edit/validation_data": ("output_image","input_image", "text"),
 }
 
 
